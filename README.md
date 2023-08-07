@@ -7,6 +7,8 @@
     - [Object Code](#object-code)
     - [Linker](#linker)
     - [Programming Cycle](#programming-cycle)
+  - [Tips](#tips)
+    - [Undefined reference to](#undefined-reference-to)
 
 ## Introduction
 
@@ -51,3 +53,13 @@
 2. Compile (cc, gcc, clang)
 3. Link (ld)
 4. Test
+
+## Tips
+
+### Undefined reference to
+
+In order to resolve linker error `undefined reference to` followed by a function name (`pow`, `sqrt`) you need to add the `-lm` argument to the GCC build command.
+
+```bash
+gcc 02-20_exercise.c -o 02-20_exercise -lm
+```
