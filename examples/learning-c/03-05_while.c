@@ -4,12 +4,12 @@ int main()
 {
     int x;
 
-    x = 1;
-    // Prints numbers from 1 to 10
-    while (x <= 10)
+    x = 20;
+    // Prints even numbers from 1 to 10
+    while (x >= 0)
     {
         printf("%d\n", x);
-        x++;
+        x = x - 2;
     }
 
     return(0);
